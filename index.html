@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <title> Formulario</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1> Registration Form </h1>
+        <form>
+                <div>
+                    <label for="firstName"> First Name: * </label>
+                    <input type="text" name="firstName" id="firstName">
+                </div> <br>
+                <div>
+                    <label for="lastName"> Last Name: * </label>
+                    <input type="text" name="lastName" id="lastName">
+                </div> <br>
+                <div>
+                    <label for="emailAddress"> Email Address: * </label>
+                    <input type="email" name="emailAddress" id="emailAddress">
+                </div> <br>               
+                <div>
+                    <label for="password"> Password: * </label>
+                    <input type="password" name="password" id="password">
+                </div> <br>
+                <div>
+                    <label for="confirmPassword"> Confirm Password: * </label>
+                    <input type="password" name="confirmPassword" id="confirmPassword">
+                </div> <br>
+                <div>
+                    <label for="birthday"> Birthday: </label>
+                    <input type="date" id="birthday" name="birthday" >
+                </div> 
+                <h3> Gender Identy: </h3>
+                <div>
+                    <input type="radio" id="male" name="genero" value="male">
+                    <label for="male"> Male </label>
+                    <input type="radio" id="Female" name="genero" value="Female">
+                    <label for="Female"> Female </label>
+                    <input type="radio" id="non-binary" name="genero" value="non-binary">
+                    <label for="non-binary"> Non-binary </label>
+                    <input type="radio" id="other" name="genero" value="other">
+                    <label for="other"> I prefer not to answer </label>
+                </div> <br>
+                <div>
+                    <label for="textarea"> A short description about myself: </label> <br>
+                    <textarea name="textarea" rows="3" cols="40"></textarea>
+                </div>  <br>
+                <div>
+                    <label for="language"> Favorite Language: </label>
+                    <select id="language" name="pais">
+                        <option value="JS"> JavaScript </option>
+                        <option value="PY"> Python </option>
+                        <option value="PHP"> PHP </option>
+                        <option value="Csharp"> C# </option>
+                    </select>
+                </div> <br>
+                <div>
+                    <input type="checkbox" id="yes" name="confimremail" value="yes" checked>
+                    <label for="yes"> Yes, I would like to receive periodic email updates </label>
+                </div> <br>
+                <div>
+                    <button type="submit" id="enviar">
+                        Create Account
+                    </button>
+                </div> <br>
+                <legend> * Indicates a required field </legend>
+        </form>
+    </body>
+</html>
